@@ -15,6 +15,21 @@ docker-compose up --build
 
 ---
 
+## 🔗 Документация API
+
+- Swagger: [http://localhost:8000/swagger/](http://localhost:8000/swagger/)
+- Redoc: [http://localhost:8000/redoc/](http://localhost:8000/redoc/)
+
+## 📦 Эндпоинты
+
+| Метод | URL                            | Описание                         |
+|-------|--------------------------------|----------------------------------|
+| POST  | `/api/submitData/`            | Добавить перевал                 |
+| GET   | `/api/submitData/<id>/`       | Получить перевал по ID           |
+| PATCH | `/api/submitData/<id>/`       | Изменить перевал (если status=new) |
+| GET   | `/api/submitData/?user__email=<email>` | Получить все перевалы пользователя |
+
+
 ## 📌 Описание API
 
 ### 📤 POST `/submitData/`
